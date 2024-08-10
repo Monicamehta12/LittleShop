@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductsService {
-  private apiUrl = 'https://api.escuelajs.co/api/v1/products';
+  private apiUrl = 'https://dummyjson.com/products?sortBy=title&order=asc';
 
   constructor(private http: HttpClient) {}
 

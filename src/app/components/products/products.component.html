@@ -1,6 +1,6 @@
 <div class="products-container">
     <div class="product-card" *ngFor="let product of paginatedProducts">
-      <img [src]="product.category.image" alt="{{ product.name }}" />
+      <img [src]="product.images[0]" alt="{{ product.name }}" />
       <h2>{{ product.title }}</h2>
       <p>Price: ${{ product.price }}</p>
       <button>Add to Cart</button>

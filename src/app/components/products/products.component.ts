@@ -24,8 +24,9 @@ export class ProductsComponent implements OnInit {
 
   getAllProducts() {
     this.productsService.fetchProducts().subscribe(
-      (products) => {
-        this.products = products;
+      (data) => {
+        this.products = data.products;
+        console.log(this.products)
         this.setPaginatedProducts();
       },
       (error) => {
