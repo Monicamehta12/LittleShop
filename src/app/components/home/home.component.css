@@ -1,0 +1,130 @@
+.home-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.home-content .col-2{
+    flex-basis: 40%;
+    min-width: 300px;
+    padding-right: 10%;
+}
+
+.home-content .col-1{
+    flex-basis: 50%;
+}
+
+.home-content .col-1 img{
+    max-width: 100%;
+    min-height: 700px;
+    min-width: 650px;
+    padding-left: 10%;
+}
+
+.col-2 h2{
+    font-size: 2.5rem;
+    width: 500px;
+    margin-bottom: 0;
+    color: #47265f;
+}
+
+.col-2 h3{
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: #47265f;
+}
+
+.col-2 p{
+    margin: 5px 0 20px 0;
+    color: #47265f;
+}
+
+.primary-btn{
+    padding: 10px;
+    width: 150px;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #47265f;
+    border: 2px solid #47265f;
+    cursor: pointer;
+}
+
+.primary-btn:hover{
+    padding: 10px;
+    background-color: rgb(255, 88, 98);
+    border: none;
+    color: #fff;
+    font-size: 15px;
+} 
+
+.new-arrivals {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.feat-products h2,
+.new-arrivals h2 {
+    font-size: 2.5rem;
+    color: #47265f;
+    padding: 5px 0;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 5px solid rgb(205, 68, 77);
+}
+
+.feat-container {
+    margin: 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feat-products .item {
+    width: 23%;
+    min-width: 250px;
+    height: 350px;
+    box-shadow: 1px 1px 6px 1px #f1ececf7;
+    position: relative;
+}
+
+.feat-products .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.feat-products .item .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.feat-products .item .img-overlay:hover {
+    opacity: 1;
+}
+
+.feat-products .item .img-overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.feat-products .item .img-overlay:hover>* {
+    transform: translateY(0);
+}
+
+.feat-products .item .img-overlay p {
+    padding: 0 25px;
+    font-size: 1.9em;
+    font-weight: 600;
+}

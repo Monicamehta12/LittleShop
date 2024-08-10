@@ -1,0 +1,16 @@
+<div class="products-container">
+    <div class="product-card" *ngFor="let product of paginatedProducts">
+      <img [src]="product.category.image" alt="{{ product.name }}" />
+      <h2>{{ product.title }}</h2>
+      <p>Price: ${{ product.price }}</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Pagination Controls -->
+<div class="pagination-controls">
+    <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }}</span>
+    <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage * pageSize >= products.length">Next</button>
+  </div>
+  
