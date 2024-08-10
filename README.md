@@ -25,7 +25,7 @@ This is a client-side web application built with Angular 18. The application inc
 ## Features
 
 - **Client-Side Navigation:** A navigation bar with links to three pages: Home, Products, and a Contact Form Page.
-- **Product Page:** Consumes data from a public API: 'https://api.escuelajs.co/api/v1/products'
+- **Product Page:** Consumes data from a public API: 'https://dummyjson.com/products?sortBy=title&order=asc'
  and displays it.
 - **Form Page:** Contains a reactive form with validation for user input.
 
@@ -33,6 +33,12 @@ This is a client-side web application built with Angular 18. The application inc
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/angular-web-app.git
+   git clone https://github.com/Monicamehta12/LittleShop.git
    cd angular-web-app
+
+## Install dependencies
+npm install
+
+## Run locally
+ng serve
 
