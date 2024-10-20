@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Shop</title>
+    <link rel="icon" href="images/LS1.png" type="image/icon type">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/85b47a9f8c.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header starts here -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="home.html"><img class="logo" src="images/Little_Shop1-removebg-preview.png" height="100"
+                        width="200"></a>
+                <nav>
+                    <ul class="menu" id="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html" class="active">Products</a></li>
+                        <li><a href="aboutus.html">About US</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="register.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a class="cart" href="cart.html"><i class="fa fa-shopping-cart"></i><span class="cart-item">3</span></a>
+                <div class="toggle-menu" onclick="menutoggle()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Main starts here -->
+    <main>
+        <div class="product-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/gallery-1.jpg" alt="T-shirt" width="100%" id="product-img">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/gallery-1.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-2.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-3.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/gallery-4.jpg" alt="" width="100%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home / T-Shirt</p>
+                    <h1>Red Men's T-Shirt</h1>
+                    <h4>$99.00</h4>
+                    <select name="" id="">
+                        <option value="">Select size</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XL">XL</option>
+                        <option value="Large">Large</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Small">Small</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="" class="primary-btn">Add to cart</a>
+
+                    <h3>Product Details</h3>
+                    <p>Give your summer wardrobe a style upgrade with the Men's Active T-Shirt. Team
+                        it with a pair of
+                        shorts for your morning workout or a denims for an evening out with guys.</p>
+                    <div class="features">
+                        <h4>Features</h4>
+                        <p>Athleisure T-shirt can be paired with tracks, khakis or jeans</p>
+                        <p>Style: Round Neck</p>
+                        <p>Sleeve: Short Sleeves</p>
+                        <p>Colour: Teal</p>
+                        <p>Print: Geometric</p>
+                        <p>Fit: Regular</p>
+                    </div>
+                    <div class="size">
+                        <h4>Size & Fit</h4>
+                        <p>The model(height 6) is wearing a size M</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main starts here -->
+
+    <!-- Footer starts here -->
+    <footer>
+        <div class="footer-row">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Phone: </strong> +1-(123)-456-7788 / +1-(123)-456-7799</p>
+                <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About us</h4>
+                <a href="aboutus.html">About us</a>
+                <a href="cart.html">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="register.html">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col">
+                <h4>Payment Options</h4>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023, Designed and Developed by Avengers.</p>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- JavaScript link-->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/productDetail.js"></script>
+</body>
+
+</html>

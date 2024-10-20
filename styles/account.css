@@ -1,0 +1,115 @@
+main{
+    margin: 10%;
+    padding: 10%;
+    background: url("/images/pexels-karolina-grabowska-5632398.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.account-form{
+    width: 50%;
+    height: 450px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.account-form span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #47265f;
+    cursor: pointer;
+    width: 120px;
+    display: inline-block;
+    transition: border-bottom ease-in-out;
+}
+
+.account-form span:hover{
+    color: #fff;
+}
+
+#indicator{
+    width: 120px;
+    height: 3px;
+    background-color: #fff;
+    border: none;
+    transform: translateX(120px);
+    transition: transform 1s;
+}
+
+.form-btn{
+    display: inline-block;
+}
+
+.account-form form{
+    width: 100%;
+    padding: 0 30px;
+    position: absolute;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    transition: transform 1s;
+}
+
+.account-form form input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.account-form form a{
+    color: #fff;
+}
+
+.account-form form button{
+    border: none;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+#login-form{
+    left: -430px;
+}
+
+#register-form{
+    left: 0;
+}
+
+
+/*  media queries */
+@media only screen and (max-width: 786px){
+    .account-form{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .account-form{
+        padding: 20px 0px;
+    }
+
+    .account-form span{
+        font-size: 1rem;
+    }
+
+    #indicator{
+        width: 85px;
+        transform: translateX(142px);
+    }
+}

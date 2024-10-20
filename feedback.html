@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Shop</title>
+    <link rel="icon" href="images/LS1.png" type="image/icon type">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/85b47a9f8c.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header starts here -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="home.html"><img class="logo" src="images/Little_Shop1-removebg-preview.png" height="100"
+                        width="200"></a>
+                <nav>
+                    <ul class="menu" id="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="aboutus.html">About US</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="register.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a class="cart" href="cart.html"><i class="fa fa-shopping-cart"></i><span class="cart-item">3</span></a>
+                <div class="toggle-menu" onclick="menutoggle()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- main content -->
+    <div class="form-container">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Your feedback is valuable</legend>
+                <div class="my-15">
+                    <label for="name">Name: </label>
+                    <input type="text" class="inputField" id="name" name="name" placeholder="Enter your Name" required>
+                </div>
+
+                <div class="my-15">
+                    <label for="email">E-mail ID: </label>
+                    <input type="email" class="inputField" id="email" name="email" required placeholder="abc@gmail.com"
+                        required>
+                </div>
+
+                <div class="my-15">
+                    <label for="service">Was the website overall functioning appropriately?</label><br>
+                    <div class="radiobuttons">
+                        <input type="radio" name="service" id="5" value="Strongly-agree">
+                        <label for="5"><span class="emoji">&#128516;</span></label>
+
+                        <input type="radio" name="service" id="4" value="Agree">
+                        <label for="4"><span class="emoji">&#128578;</span></label>
+
+                        <input type="radio" name="service" id="3" value="Average">
+                        <label for="3"><span class="emoji">&#128577;</span></label>
+
+                        <input type="radio" name="service" id="2" value="Disagree">
+                        <label for="2"><span class="emoji">&#128542;</span></label>
+
+                        <input type="radio" name="service" id="1" value="Strongly-disagree">
+                        <label for="1"><span class="emoji">&#128544;</span></label>
+                    </div>
+                </div>
+
+                <div class="my-15">
+                    <label for="search">How easy was it for you to search for your desired options?</label><br>
+                    <div class="radiobuttons">
+                        <input type="radio" name="search" id="search1" value="Strongly-agree">
+                        <label for="search1"><span class="emoji">&#128516;</span></label>
+
+                        <input type="radio" name="search" id="search2" value="Agree">
+                        <label for="search2"><span class="emoji">&#128578;</span></label>
+
+                        <input type="radio" name="search" id="search3" value="Average">
+                        <label for="search3"><span class="emoji">&#128577;</span></label>
+
+                        <input type="radio" name="search" id="search4" value="Disagree">
+                        <label for="search4"><span class="emoji">&#128542;</span></label>
+
+                        <input type="radio" name="search" id="search5" value="Strongly-disagree">
+                        <label for="search5"><span class="emoji">&#128544;</span></label>
+                    </div>
+                </div>
+
+                <div class="my-15">
+                    <label for="purchases">Were you able to make purchases efficiently and according to your
+                        choice?</label><br>
+                    <div class="radiobuttons">
+                        <input type="radio" name="purchases" id="purchases1" value="Strongly-agree">
+                        <label for="purchases1"><span class="emoji">&#128516;</span></label>
+
+                        <input type="radio" name="purchases" id="purchases2" value="Agree">
+                        <label for="purchases2"><span class="emoji">&#128578;</span></label>
+
+                        <input type="radio" name="purchases" id="purchases3" value="Average">
+                        <label for="purchases3"><span class="emoji">&#128577;</span></label>
+
+                        <input type="radio" name="purchases" id="purchases4" value="Disagree">
+                        <label for="purchases4"><span class="emoji">&#128542;</span></label>
+
+                        <input type="radio" name="purchases" id="purchases5" value="Strongly-disagree">
+                        <label for="purchases5"><span class="emoji">&#128544;</span></label>
+                    </div>
+                </div>
+
+                <div class="my-15">
+                    <label for="satisfied">Were you satisfied with your purchases?</label><br>
+                    <div class="radiobuttons">
+                        <input type="radio" name="satisfied" id="satisfied1" value="Strongly-agree">
+                        <label for="satisfied1"><span class="emoji">&#128516;</span></label>
+
+                        <input type="radio" name="satisfied" id="satisfied2" value="Agree">
+                        <label for="satisfied2"><span class="emoji">&#128578;</span></label>
+
+                        <input type="radio" name="satisfied" id="satisfied3" value="Average">
+                        <label for="satisfied3"><span class="emoji">&#128577;</span></label>
+
+                        <input type="radio" name="satisfied" id="satisfied4" value="Disagree">
+                        <label for="satisfied4"><span class="emoji">&#128542;</span></label>
+
+                        <input type="radio" name="satisfied" id="satisfied5" value="Strongly-disagree">
+                        <label for="satisfied5"><span class="emoji">&#128544;</span></label>
+                    </div>
+                </div>
+
+                <div class="my-15">
+                    <label for="moreprods">How likely are you to purchase more products from this
+                        website?</label><br>
+                    <div class="radiobuttons">
+                        <input type="radio" name="moreprods" id="moreprods1" value="Strongly-agree">
+                        <label for="moreprods1"><span class="emoji">&#128516;</span></label>
+
+                        <input type="radio" name="moreprods" id="moreprods2" value="Agree">
+                        <label for="moreprods2"><span class="emoji">&#128578;</span></label>
+
+                        <input type="radio" name="moreprods" id="moreprods3" value="Average">
+                        <label for="moreprods3"><span class="emoji">&#128577;</span></label>
+
+                        <input type="radio" name="moreprods" id="moreprods4" value="Disagree">
+                        <label for="moreprods4"><span class="emoji">&#128542;</span></label>
+
+                        <input type="radio" name="moreprods" id="moreprods5" value="Strongly-disagree">
+                        <label for="moreprods5"><span class="emoji">&#128544;</span></label>
+                    </div>
+                </div>
+
+                <div class="my-15">
+                    <label for="recommend">How likely are you to recommend this website to your friends and
+                        family?</label><br>
+                    <div class="radiobuttons">
+                        <input type="radio" name="recommend" id="recommend1" value="Strongly-agree">
+                        <label for="recommend1"><span class="emoji">&#128516;</span></label>
+
+                        <input type="radio" name="recommend" id="recommend2" value="Agree">
+                        <label for="recommend2"><span class="emoji">&#128578;</span></label>
+
+                        <input type="radio" name="recommend" id="recommend3" value="Average">
+                        <label for="recommend3"><span class="emoji">&#128577;</span></label>
+
+                        <input type="radio" name="recommend" id="recommend4" value="Disagree">
+                        <label for="recommend4"><span class="emoji">&#128542;</span></label>
+
+                        <input type="radio" name="recommend" id="recommend5" value="Strongly-disagree">
+                        <label for="recommend5"><span class="emoji">&#128544;</span></label>
+                    </div>
+                </div>
+
+                <div class="feedback-content">
+                    <div class="que10">
+                        <label for="experience">Tell us more about your experience</label><br><br>
+                        <textarea id="experience" name="experience" class="exp-content" cols="140" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="button">
+                    <input type="reset" class="primary-btn reset-btn" name="reset" value="Reset" width="200" height="150">
+                    <input type="submit" class="primary-btn" id="f-submit" name="submit" value="Submit" width="200" height="150">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <!-- Main content -->
+
+    <!-- Footer starts here -->
+    <footer>
+        <div class="footer-row">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Phone: </strong> +1-(123)-456-7788 / +1-(123)-456-7799</p>
+                <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About us</h4>
+                <a href="aboutus.html">About us</a>
+                <a href="cart.html">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="register.html">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col">
+                <h4>Payment Options</h4>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023, Designed and Developed by Avengers.</p>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- JavaScript link-->
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>

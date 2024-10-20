@@ -1,0 +1,85 @@
+.about-header {
+    background-image: url("/images/tamanna-rumee-eD1RNYzzUxc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.about-header h2 {
+    font-size: 2.5em;
+}
+
+.about-info .about-marque {
+    background-color: rgb(255, 88, 98);
+    ;
+    width: 100%;
+    color: #fff;
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+}
+
+.about-info img {
+    width: 50%;
+    height: auto;
+}
+
+.about-info .about-desc {
+    width: 50%;
+    padding-left: 40px;
+    color: #47265f;
+}
+
+.about-info .about-desc h2 {
+    font-size: 3em;
+}
+
+.about-app {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.about-app h4 {
+    font-size: 2.5em;
+    color: #47265f;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(255, 88, 98);
+    margin-bottom: 2%;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-app .app-video {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 5% 10%;
+    background-color: #23122f;
+    border-radius: 10px;
+}
+
+.about-app video {
+    /* width: auto;
+    height: auto; */
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* media queries */
+@media (max-width: 900px) {
+    .about-info {
+        justify-content: center;
+        /* flex-wrap: wrap; */
+    }
+}

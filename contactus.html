@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="" type="image/icon type"><!--icon in tab-->
+    <meta name="description" content=""><!--website name and type-->
+    <meta name="keywords" content=""> <!--add five keyword from page-->
+    <title>Little Shop</title> <!--it shows at top in tab-->
+    <link rel="icon" href="images/LS1.png" type="image/icon type">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/85b47a9f8c.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Header starts here -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="home.html"><img class="logo" src="images/Little_Shop1-removebg-preview.png" height="100"
+                        width="200"></a>
+                <nav>
+                    <ul class="menu" id="menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="aboutus.html">About US</a></li>
+                        <li><a href="contactus.html" class="active">Contact</a></li>
+                        <li><a href="register.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a class="cart" href="cart"><i class="fa fa-shopping-cart"></i><span class="cart-item">3</span></a>
+                <div class="toggle-menu" onclick="menutoggle()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends here -->
+    <main>
+        <div class="form">
+            <form action="thankyou.html" method="post">
+                <p>Send us message</p>
+
+                <div class="outer padding-form">
+                    <div class="form-inside-left">
+                        <label for="name">Name*</label><br>
+                        <input type="text" id="name" name="name" placeholder="Your name" required><br>
+                        <label for="phone">Phone</label><br>
+                        <input type="number" id="phone" name="phone" placeholder="Phone#"><br>
+                    </div>
+                    <div class="form-inside-right">
+                        <label for="email">Email*</label><br>
+                        <input type="email" id="mail" name="mail" placeholder="Your email" required><br>
+                        <label for="cname">Company Name</label><br>
+                        <input type="text" id="cname" name="cname" placeholder="Company name"><br>
+                    </div>
+                </div>
+                <label for="message">Message*</label><br>
+                <textarea name="message" id="message" rows="5" placeholder="Write your message"></textarea><br>
+                <button class="primary-btn">
+                    Send Message
+                </button>
+            </form>
+            <div class="contact-info">
+                <div class="padding-contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Your queries are our queries. You can always send us your queries with this application, Send us a message and we promise to respond you within 24 hours <span class="emoji" font-size: 2rem;>&#128516;</span></p>
+                        
+                    <div>
+                        
+                        <hr>
+                        <br>
+                        <div class="icon-detail">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <p>&nbsp;&nbsp;35 St. Georges Street, Toronto, Ontario M8E 4Y1</p>
+                        </div>
+                        <div class="icon-detail">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>
+                                &nbsp;&nbsp;+1-(123)-456-7788
+                            </p>
+                        </div>
+                        <div class="icon-detail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>&nbsp;&nbsp;littleshop.smallbusiness@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Footer starts here -->
+    <footer>
+        <div class="footer-row">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Phone: </strong> +1-(123)-456-7788 / +1-(123)-456-7799</p>
+                <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About us</h4>
+                <a href="aboutus.html">About us</a>
+                <a href="cart.html">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="register.html">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col">
+                <h4>Payment Options</h4>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023, Designed and Developed by Avengers.</p>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- JavaScript link-->
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>

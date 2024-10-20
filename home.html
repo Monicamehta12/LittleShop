@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Shop</title>
+    <link rel="icon" href="images/LS1.png" type="image/icon type">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/85b47a9f8c.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header starts here -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="home.html"><img class="logo" src="images/Little_Shop1-removebg-preview.png" height="100" width="200"></a>
+                <nav>
+                    <ul class="menu" id="menu">
+                        <li><a href="home.html" class="active">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="aboutus.html">About US</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="register.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a class="cart" href="cart.html"><i class="fa fa-shopping-cart"></i><span class="cart-item">3</span></a>
+                <div class="toggle-menu" onclick="menutoggle()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="home-content">
+            <div class="col-1">
+                <img src="images/1362-removebg-preview.png" alt="hero-image">
+            </div>
+            <div class="col-2">
+                <h2>One Stop Shopping To All Your Need</h2>
+                <h3>Best Shopping Opportunities.</h3>
+                <p>Choose, Purchase, Enjoy.</p>
+                <a href="products.html"><button class="primary-btn">Shop Now &#8594;</button></a>
+            </div>
+            
+        </div>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Main starts here -->
+    <main>
+        <section class="feat-products">
+            <h2>Featured Products</h2>
+            <div class="container">
+                <div class="item">
+                    <img src="images/p1.jpg" alt="">
+                    <div class="img-overlay">
+                        <p>Handcrafted Decors</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/p2.jpg" alt="">
+                    <div class="img-overlay">
+                        <p>Gift Items</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/p3.jpg" alt="">
+                    <div class="img-overlay">
+                        <p>Knitted Clothing</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/p4.jpg" alt="">
+                    <div class="img-overlay">
+                        <p>Quoted T-shirts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="banner-content">
+                <h4>Best Heat Deals!</h4>
+                <h2>Upto <span class="discount">70% Off</span> - Explore All The Offers</h2>
+                <button class="primary-btn">Explore</button>
+            </div>
+        </section>
+
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+            <span>Checkout Some New Styles For You And Your Loved Ones</span>
+            <div class="container">
+                <div class="item">
+                    <img src="images/product1.jpg" alt="">
+                    <div class="description">
+                        <p>Men's T-shirt</p>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <span>$56</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/blue tshirt 1.jpg" alt="">
+                    <div class="description">
+                        <p>Men's T-shirt</p>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <span>$67</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/red top.jpg" alt="">
+                    <div class="description">
+                        <p>Women's Top</p>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <span>$69</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/product6.jpg" alt="">
+                    <div class="description">
+                        <p>Men's Watch</p>
+                        <div class="ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <span>$159</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main starts here -->
+
+    <!-- Footer starts here -->
+    <footer>
+        <div class="footer-row">
+            <div class="col">
+                <h4>Contact</h4>
+                <p><strong>Phone: </strong> +1-(123)-456-7788 / +1-(123)-456-7799</p>
+                <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fa fa-facebook-f"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About us</h4>
+                <a href="aboutus.html">About us</a>
+                <a href="cart.html">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="register.html">Sign In</a>
+                <a href="cart.html">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col">
+                <h4>Payment Options</h4>
+                <p>Secured Payment Gateways</p>
+                <img src="images/pay.png" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023, Designed and Developed by Avengers.</p>
+        </div>
+    </footer>
+    <!-- Footer ends here -->
+
+    <!-- JavaScript link-->
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>

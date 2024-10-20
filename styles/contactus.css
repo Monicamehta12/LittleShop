@@ -1,0 +1,76 @@
+main {
+  height: 100%;
+  width: 100%;
+  padding: 8% 0;
+}
+
+.form {
+  width: 80%;
+  box-shadow: 8px 7px 9px grey;
+  margin: 0 auto;
+  display: flex;
+}
+
+form {
+  width: 65%;
+  background-color: white;
+  padding: 30px;
+}
+
+form p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+
+.padding-form {
+  width: 100%;
+  display: flex;
+}
+
+.form-inside-left {
+  width: 50%;
+  height: 100%;
+}
+
+.form-inside-right {
+  width: 50%;
+  height: 100%;
+}
+
+form input {
+  width: 90%;
+  border: none;
+  background: none;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+  margin: 10px 0 20px 0;
+}
+
+textarea {
+  width: 95%;
+  border: none;
+  background: none;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.contact-info {
+  width: 35%;
+  background-color: #47265f;
+  color: #fff;
+}
+
+.padding-contact-info {
+  padding: 25px;
+}
+
+.icon-detail {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.icon-detail i {
+  color: #fff;
+}

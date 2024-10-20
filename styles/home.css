@@ -1,0 +1,250 @@
+.feat-products,
+.new-arrivals {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.feat-products h2,
+.new-arrivals h2 {
+    font-size: 2.5rem;
+    color: #47265f;
+    padding: 5px 0;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 5px solid rgb(205, 68, 77);
+}
+
+.container {
+    margin: 6% 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feat-products .item {
+    width: 23%;
+    min-width: 250px;
+    height: 350px;
+    box-shadow: 1px 1px 6px 1px #f1ececf7;
+    position: relative;
+}
+
+.feat-products .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.feat-products .item .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.feat-products .item .img-overlay:hover {
+    opacity: 1;
+}
+
+.feat-products .item .img-overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.feat-products .item .img-overlay:hover>* {
+    transform: translateY(0);
+}
+
+.feat-products .item .img-overlay p {
+    padding: 0 25px;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+
+.banner {
+    background-image: url('../images/front-view-cyber-monday-composition1.jpg');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner .banner-content {
+    text-align: center;
+    width: 500px;
+    margin-right: 10%;
+}
+
+.banner h4 {
+    font-size: 2rem;
+    color: #47265f;
+    margin: 0 0 20px 0;
+}
+
+.banner h2 .discount {
+    font-size: 3rem;
+    color: rgb(205, 68, 77);
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #47265f;
+}
+
+.banner-content button {
+    margin-top: 30px;
+}
+
+.new-arrivals {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.new-arrivals img{
+    width: 100px;
+    height: 400px;
+}
+
+.new-arrivals h2 {
+    margin-bottom: 20px;
+}
+
+.new-arrivals .item {
+    width: 23%;
+    min-width: 250px;
+    box-shadow: 1px 1px 6px 1px #f1ececf7;
+}
+
+.new-arrivals .item img {
+    width: 100%;
+}
+
+.new-arrivals .item .description {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.new-arrivals .item .description p {
+    font-size: 16px;
+    color: #6b6969;
+    margin: 0;
+    font-weight: 500;
+}
+
+.new-arrivals .item .description i {
+    color: #efcd7d;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+    .col-1 h2 {
+        font-size: 2rem;
+        width: 350px;
+    }
+
+    .col-1 h3 {
+        font-size: 1em;
+    }
+
+    .home-content .col-2 img {
+        max-width: 100%;
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .feat-products .container, .new-arrivals .container {
+        margin: 6% 16%;
+    }
+
+    .feat-products .container .item, .new-arrivals .container .item{
+        margin-bottom: 8%;
+    }
+
+    .banner .banner-content {
+        text-align: center;
+        width: 500px;
+        margin-right: 5%;
+    }
+
+    .banner h4 {
+        font-size: 1.8rem;
+    }
+
+    .banner h2 .discount {
+        font-size: 2rem;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feat-products .container, .new-arrivals .container{
+        margin: 6% 5%;
+    }
+
+    .banner{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .banner-content {
+        position: absolute;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, .3);
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .banner h2, .banner h4{
+        color: #fff;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        justify-content: center;
+    }
+
+    .feat-products h2,
+    .new-arrivals h2 {
+        font-size: 1.5rem;
+    }
+
+    .feat-products .container .item, .new-arrivals .container .item {
+        margin-bottom: 12%;
+    }
+
+    .banner .banner-content{
+        width: 300px;
+    }
+
+    .banner h4 {
+        font-size: 1.2rem;
+    }
+
+    .banner h2 .discount {
+        font-size: 1.5rem;
+    }
+
+    .banner h2 {
+        font-size: 1.5rem;
+    }
+}
